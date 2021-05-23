@@ -1,0 +1,27 @@
+button{
+    background-color: orange;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+#on{
+    display: none;
+}
+
+img{
+    margin-left: 15%;
+}
+
+#bloq{
+    display: flex;
+}
+
+#b1{
+    margin-right: 25%;
+    margin-left: 10%;
+}
+
+
+    

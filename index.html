@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice lampe</title>
+    <link href="css/index.css" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div id="bloq">
+     <button type="button"  id="b1" >Turn ON</button> <br>
+     <button type="button"  id="b2" >Turn OF</button> <br>
+    </div>
+    <br>
+    <img id="off" src="img/off.png" >
+    <img id="on" src="img/on.png" >
+
+
+ <script>
+
+    
+         /*  var btn1 = document.getElementById('b1');
+           var btn2 = document.getElementById('b2');
+
+        function btn(){
+            If (btn1)  
+              imgOFF.style.display='none';
+              var imgOn =document.getElementbyId('on') ;
+              imgON.style.display='block';
+            Else (Btn2=true) 
+              imgON.style.display='none';
+              var imgof= document.getElementbyId('off') ;
+              imgOFF.style.display='block';
+            
+        } ;*/
+
+    var body = document.getElementsByTagName('body')[0];
+    var imgOFF=document.getElementById('off');
+
+    var btn1 = document.getElementById('b1');
+    btn1.addEventListener('click',function(){
+        imgOFF.style.display='none';
+        var imgON=document.getElementById('on');
+        imgON.style.display='block';
+    });
+
+
+    var btn2 = document.getElementById('b2');
+    btn2.addEventListener('click',function(){
+        var imgON=document.getElementById('on');
+        imgON.style.display='none';
+        imgOFF.style.display='block';
+    });
+
+    
+ </script>
+
+</body>
+
+</html>
